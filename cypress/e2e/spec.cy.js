@@ -48,7 +48,7 @@ describe('Walkdog Pet Sitter Registration', () => {
         cy.get('.alert-error').should("have.text", "Informe um CEP válido").should("be.visible")
     })
 
-    it('ADDRESS', () => {
+    it('Invalid ADDRESS', () => {
         cy.visit('https://walkdog.vercel.app/signup/');
 
         cy.fillFormWithoutCEP('user.json')
