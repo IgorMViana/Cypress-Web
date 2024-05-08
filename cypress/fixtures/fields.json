@@ -1,0 +1,9 @@
+[
+    "name",
+    "email",
+    "cpf",
+    "cep",
+    "addressNumber",
+    "addressDetails",
+    "file"
+]

@@ -1,0 +1,16 @@
+{
+    "name": "Igor Mattos Viana",
+    "cpf": "06233301564",
+    "email": "igormv29@gmail.com",
+    "invalidEmail": "invalidEmail",
+    "phone": "(11) 9999-9999",
+    "address": {
+      "street": "Rua Doutor Mário Rego dos Santos",
+      "bairro": "Vila Laura",
+      "city_state": "Salvador/BA",
+      "zip": "40270200",
+      "number": 314,
+      "comp": "APTO 603"
+    },
+    "CNH": "cypress/fixtures/CNH_Template.jpg"
+  }
