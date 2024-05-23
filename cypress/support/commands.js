@@ -65,6 +65,10 @@ Cypress.Commands.add('fillFormWithoutCEP', (fixture) => {
 
 Cypress.Commands.add('testEmptyFields', (fields) => {
 
+    if (!(fields instanceof Array)){
+        throw   "ERRO"
+    }
+
     fields.forEach(element => {
         if (element == 'file') cy.get(`input[type=${element}]`).should('be.empty');
         else cy.get(`input[name=${element}`).should('be.empty');
@@ -74,6 +78,10 @@ Cypress.Commands.add('testEmptyFields', (fields) => {
 })
 
 Cypress.Commands.add('testAlertErrors', (alertErros) => {
+
+    if (!(alertErros instanceof Array)){
+        throw   "ERRO"
+    }
 
     alertErros.forEach(element => {
         cy.xpath(`//span[text()="${element}"]`).should('be.visible')
